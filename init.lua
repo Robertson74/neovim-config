@@ -1,0 +1,5 @@
+require('config.config')
+require('config.navigation')
+require('config.shortcut-mappings')
+require('plugins.lazy')
+require('plugins.plugin-mappings')
