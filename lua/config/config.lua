@@ -1,27 +1,3 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
-vim.opt.number = true         -- Show line numbers
-vim.opt.relativenumber = true -- Relative line numbers
-vim.opt.tabstop = 2           -- 2 spaces for tabs
-vim.opt.shiftwidth = 2        -- 2 spaces for indent
-vim.opt.expandtab = true      -- Use spaces instead of tabs
-vim.opt.smartindent = true    -- Auto-indent
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-
-vim.api.nvim_create_user_command(
-  'ReloadInit',
-  function ()
-    for name,_ in pairs(package.loaded) do
-      vim.notify('package ' .. name)
-      -- if name:match('^user') and not name:match('nvim-tree') then
-      --   package.loaded[name] = nil
-      -- end
-    end
-
-    dofile(vim.env.MYVIMRC)
-    vim.notify("Nvim configuration reloaded!", vim.log.levels.INFO)
-  end,
-  {}
-)
+require('config.options')
+require('config.navigation')
+require('config.shortcut-mappings')

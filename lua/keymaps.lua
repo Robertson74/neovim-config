@@ -1,0 +1,15 @@
+-- -- LSP Keybindings
+-- vim.api.nvim_create_autocmd("LspAttach", {
+--   callback = function(args)
+--     local opts = { buffer = args.buf }
+--     vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+--     vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+--     vim.keymap.set("n", "<leader>fix", vim.lsp.buf.code_action, opts)
+--     vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+--     vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+--     vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, opts)
+--     vim.keymap.set("n", "<leader>di", vim.diagnostic.setloclist, opts)
+--     vim.keymap.set("n", "<leader>.", vim.diagnostic.goto_next, opts)
+--     vim.keymap.set("n", "<leader>,", vim.diagnostic.goto_prev, opts)
+--   end,
+-- })

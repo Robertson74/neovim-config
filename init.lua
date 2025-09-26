@@ -1,5 +1,4 @@
 require('config.config')
-require('config.navigation')
-require('config.shortcut-mappings')
-require('plugins.lazy')
-require('plugins.plugin-mappings')
+require('plugins.plugins')
+require('keymaps')
+require('lsp')
