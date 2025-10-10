@@ -20,10 +20,12 @@ require("lazy").setup({
   require('plugins.catppuccin'),
   require('plugins.which-key'),
   require('plugins.hop'),
-  require('plugins.lsp-config'),
-  require('plugins.nvim-cmp'),
-  require('plugins.mason'),
+  -- require('plugins.lsp-config'),
+  -- require('plugins.nvim-cmp'),
+  -- require('plugins.mason'),
   require('plugins.neominimap'),
+  require('plugins.git-gutter'),
+  require('plugins.coc'),
 })
 
 -- vim.lsp.config('lua_ls', {

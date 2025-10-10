@@ -1,4 +1,5 @@
 vim.keymap.set("n", "<Leader><Leader>", ":HopWord<CR>", { desc = "Hop to word" })
+
 return {
   "smoka7/hop.nvim",
   version = "*",
@@ -17,5 +18,4 @@ return {
     -- Add more for words/lines: HopWord, HopLine, etc.
   end,
 }
-
 
